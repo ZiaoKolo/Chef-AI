@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef IA - Trouvez vos recettes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/test.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Chef IA</h1>
+    </header>
+
+    <main class="container">
+        <section class="main-content">
+            <div class="content-left">
+                <h1>Bienvenue sur <span>Chef IA</span></h1>
+                <p>Entrez des ingrédients pour faire une recette</p>
+                
+                <form class="ajouter-ingredients">
+                    <div class="input-container">
+                        <input 
+                            type="text" 
+                            placeholder="Ex: tomate, oignon..." 
+                            id="placeholder"
+                            aria-label="Ajouter un ingrédient"
+                        />
+                        <button type="submit" id="btn-ajouter">Ajouter</button>
+                    </div>
+                </form>
+                
+                <div class="afficher-ingredients" aria-label="Liste des ingrédients ajoutés"></div>
+                
+                <button type="button" id="trv-recette">Trouver des recettes</button>
+            </div>
+
+            <div class="content-right">
+                <div class="visual-elements">
+                    <img src="/images/image 1.png" alt="" class="fond-orange" />
+                    <img src="/images/Untitled-2 1.png" alt="Chef cuisinière" class="femme" />
+                    
+                    <div class="etape etape-1">
+                        <div class="etape-number">1</div>
+                        <div class="etape-card">
+                            <h4>Étape 1</h4>
+                            <p>Entrez les ingrédients présents dans votre frigo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="etape etape-2">
+                        <div class="etape-number">2</div>
+                        <div class="etape-card">
+                            <h4>Étape 2</h4>
+                            <p>Appuyez sur le bouton trouver des recettes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="etape etape-3">
+                        <div class="etape-number">3</div>
+                        <div class="etape-card">
+                            <h4>Étape 3</h4>
+                            <p>Choisissez le plat que vous souhaitez</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recettes-section">
+            <h2>Les recettes disponibles</h2>
+            <div class="recettes-grid" id="recipesContainer">
+            </div>
+        </section>
+    </main>
+    <script src="JS/recette.js"></script>
+</body>
+</html>
