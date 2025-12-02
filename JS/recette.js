@@ -47,7 +47,7 @@ Promise.all(
   });
 });*/
 
-const API_KEY = "AIzaSyAl7dXtBB0hCSlxy6sBu78jK1OlBjehdMc"; 
+const API_KEY = ""; 
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
 const allMeals = [];
 const recipesContainer = document.getElementById("recipesContainer");
